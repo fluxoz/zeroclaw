@@ -46,6 +46,8 @@
           ];
         };
       }) // {
+      nixosModules.zeroclaw = import ./nixos/zeroclaw-module.nix;
+
       nixosConfigurations = {
         nixos = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
